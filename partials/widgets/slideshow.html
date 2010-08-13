@@ -1,0 +1,32 @@
+<div class="slideshow-wrapper">
+  <div class="slideshow">
+    <a class="backward">prev</a>
+    <div class="slides">
+      <div>Slide 1...</div>
+      <div>Slide 2...</div>
+      <div>Slide3...</div>
+    </div>
+    <a class="forward">next</a>
+    <div class="slidetabs-wrapper">
+      <div class="slidetabs">
+        <a href="#"></a>
+        <a href="#"></a>
+        <a href="#"></a>
+      </div>
+    </div>
+    <div class="slidecontrols">
+      <button onClick='$(".slidetabs").data("slideshow").play();'>Play</button>
+      <button onClick='$(".slidetabs").data("slideshow").stop();'>Stop</button>
+    </div>
+  </div>
+</div>
+<script>
+  // Set up Slidesow
+  $(document).ready(function(){
+  	$(".slidetabs").tabs(".slides > div", {
+  		effect: 'fade',
+  		fadeOutSpeed: "slow",
+  		rotate: true
+  	}).slideshow();
+  });
+</script>

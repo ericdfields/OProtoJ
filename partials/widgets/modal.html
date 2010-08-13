@@ -1,0 +1,13 @@
+<p>
+  <a class="overlay" href="#">Trigger Modal</a>
+</p>
+<div class="js-hide" id="modalContent">
+  <p>Here's some content in a modal</p>
+  <img alt="350x150" src="http://placehold.it/350x150">
+</div>
+<script type="text/javascript">
+  $('.overlay').click(function(){
+    $('#modalContent').modal();
+    return false;
+  });
+</script>
