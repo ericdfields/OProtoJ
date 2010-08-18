@@ -1,3 +1,4 @@
+# dont' get fancy
 require 'fancy-buttons'
 
 # Require any additional compass plugins here.
